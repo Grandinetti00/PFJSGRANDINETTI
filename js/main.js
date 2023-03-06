@@ -35,9 +35,49 @@ function darConsejo() {
     }
 }
 
+function crearTips() {
+    let buenosAlimentos = ["alimentos integrales.", 
+                           "frutas.", 
+                           "carnes magras y huevo.", 
+                           "legumbres, cereales y frutos secos.", 
+                           "verduras de estación."];
+
+    let malosAlimentos = ["alimentos fritos.", 
+                          "comidas con alto contenido en azucar.", 
+                          "alimentos procesados.", 
+                          "comida rapida/chatarra.", 
+                          "alimentos con alto contenido en sodio."];
+    let tips = [];
+    buenosAlimentos.map(x => tips.push(concatenar(x, "Debe comer más ")));
+    malosAlimentos.map(x => tips.push(concatenar(x, "Debe comer menos ")));
+    return tips
+}
+
+function concatenar(elemento, prefijo) {
+    return prefijo + `${elemento}`;
+}
+
+class Usuario {
+    constructor(nombre, edad, sexo) {
+      this.nombre = nombre;
+      this.edad = edad;
+      this.sexo = sexo;
+    }
+    getNombre(){return this.nombre};
+}
+  
+  const nuevoUsurario = new Usuario(
+    prompt("Ingrese su nombre:"),
+    prompt("Ingrese su edad:"), 
+    prompt("Ingrese su sexo:"));
+
+    console.log (nuevoUsurario.getNombre())
+
 let start = "si"
 while (start == "si"){
-    let question = prompt("BIENVENIDO\nSi querés conocer tu índice de masa corporal (IMC), escribí 1\nSi querés recomendaciones de salud, escribí 2");
+    let question = prompt(`BIENVENIDO ${nuevoUsurario.nombre} \nSi querés conocer tu índice de masa corporal (IMC), escribí 1
+    \nSi querés recomendaciones de salud, escribí 2 
+    \nSi querés ideas para tu dieta, escribí 3`);
     if (question == "1") {
         let peso = Number(prompt ("Por favor ingrese su peso en kilos:"));
         let altura = Number(prompt ("Por favor ingrese su altura en centimetros:"));
@@ -49,10 +89,24 @@ while (start == "si"){
         }
     } else if (question == "2") {
             darConsejo();
+    } else if (question == "3") {
+            let tips = crearTips();
+            let pregunta = parseInt(prompt("¿Cuántas ideas querés para incorporar a tu dieta?"));
+            if (pregunta <= tips.length) {
+                for (let x = 0; x < pregunta; x++) {
+                    alert(tips.shift());
+                    console.log(tips);
+                }
+            } else {
+                alert(`Intente con un número del 1 al ${tips.length}.`)
+            }
     } else {
         alert("Tiene que escribir alguna de las opciones anteriores.");
     }
     start = prompt("¿Desea continuar usando la aplicación?");
-    start.toLowerCase();
+    start = start.toLowerCase();
 }
-alert("Gracias. Vuelvan prontos!");
+alert(`Gracias ${nuevoUsurario.nombre}. Vuelvan prontos!`);
+
+
+

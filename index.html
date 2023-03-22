@@ -1,15 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <h1>CURSO JAVASCRIPT</h1>
-        <h2>Segunda preentrega</h2>
-        <h3>Grandinetti, Victor Fabian</h3>
-        <script src="./js/main.js"></script>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>QUICK TRAINING</title>
+</head>
+<body>
+  <header>
+    <h1>Quick Training</h1>
+    <div class="headerUp">
+      <div class="headerTitulo">
+        <nav class="nav">
+          <a class="nav-link" href="./pages/bmi.html">BMI</a>
+          <a class="nav-link" href="./pages/diet.html">DIET</a>
+          <a class="nav-link" href="./pages/protein.html">PROTEIN COUNTER</a>
+          <a class="nav-link" href="#aboutUs">ABOUT US</a>
+          <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+        </nav>
+      </div>
+      <div class="headerLog">
+        <img src="./images/user.png" class="imgUser" alt="user"><p class="navUser" id="userNav"></p>
+      </div>
+    </div>
+  </header>
+  <main class="cards">
+    <div class="card">
+      <a href="./pages/bmi.html" class="tituloCard">
+        <h5 class="title">BMI</h5>
+      </a>
+      <p class="card-text">A simple way to measure obesity is the body mass index (BMI). It is calculated by dividing a
+        person's weight in kilograms by the square of their height in meters. But don't worry, we do it for you. With this method
+        we can classify if you are underweight, normal weight, overweight or obese, based exclusively on the individual's mass
+        and height. It is not necessary to know your age, gender, body fat percentage or muscle mass. Just focus on staying healthy.
+        Share your BMI results. Calculate your BMI with our special calculator. Easy to use and free!</p>
+      <img src="./images/bmi.jpg" class="card-img" alt="bmi">
+    </div>
+    <div class="card">
+      <a href="./pages/diet.html" class="tituloCard">
+        <h5 class="title">DIET</h5>
+      </a>
+      <p class="card-text">Generally we refer to "diet" as a synonym for a partial or near total deprivation of food.
+        However, the correct meaning of Diet is the set of foods and dishes that are consumed every day, and constitutes the unit
+        of food. A correct diet refers to eating habits that meet specific needs at different stages of life, promoting proper
+        development and expected weight for height and preventing healthy development. From Quick Training we help you with your
+        diet. Here are some tips to stay healthy based on your BMI and preferences.</p>
+      <img src="./images/diet.jpg" class="card-img" alt="diet">
+    </div>
+    <div class="card">
+      <a href="./pages/protein.html" class="tituloCard">
+        <h5 class="title">PROTEIN COUNTER</h5>
+      </a>
+      <p class="card-text">Proteins are found in every cell in the body. Our bodies need protein from the food we eat to
+        build and maintain bones, muscles, and skin. It is important to get enough protein in the diet. You should eat protein
+        every day, because the body doesn't store it the same way it stores fat or carbohydrates. This free protein calculator
+        estimates the amount of protein a person needs each day to remain healthy based on certain averages and recommendations.</p>
+      <img src="./images/protein.jpg" class="card-img" alt="proteinCounter">
+    </div>
+    <div class="card" id="aboutUs">
+      <a href="./index.html" class="tituloCard">
+        <h5 class="title">ABOUT US</h5>
+      </a>
+      <p class="card-text">Due to our extensive knowledge and experience in global production, sourcing and logistics,
+        Quick Training is known worldwide as a premier web with a reputation for innovation, speed, efficiency and
+        quality. This advantage give us the ability to consistently delivery premium servic, on time and help you maximize your
+        goals. Quick Training is a leading online health and fitness education provider. We specialize in easy delivering high
+        quality, up-to-date, and engaging education that redefines the online learning experience for both aspiring and already
+        established health and fitness professionals. Enjoy life with health.</p>
+      <img src="./images/aboutUs.jpg" class="card-img" alt="about us">
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footerLink">
+        <a href="./pages/log.html" class="nav-log">Log In</a>
+        <a href="./pages/newUser.html" id="logIn">Log Up</a>
+    </div>
+    <p>A Part of VFG Digital Media.</p>
+    <p>Our product picks are editor-tested, expert-approved. We may earn a commission through links on our site.</p>
+    <p class="cr"> COPYRIGHT 2023</p>
+</footer>
+  <script src="./js/userNav.js"></script>
+</body>
 </html>

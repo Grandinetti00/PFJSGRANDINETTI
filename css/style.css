@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-------------------------------LOGIN-----------------------------*/
+.logIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: red;
+}
+.formLog {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+.h1Log {
+    font-family:'Cormorant Unicase', serif;
+    color: #252525;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.inputLog {
+    font-family:'Cormorant Unicase', serif;
+    margin-bottom: 35px;
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px red;
+    padding: 0 5px;
+    font-size: 18px;
+}
+.linkUser{
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.buttonLog {
+    color: #fff;
+    border: none;
+    background: red;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/*-------------------------------FORGOT-----------------------------*/
+.forgotInput {
+    font-family:'Cormorant Unicase', serif;
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px red;
+    padding: 0 5px;
+    font-size: 18px;
+}
+/*-------------------------------HEADER-----------------------------*/
+header {
+    background-color: red;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
+}
+.headerUp{
+    display: flex;
+    justify-content: space-between;
+}
+.headerTitulo {
+    display: flex;
+}
+header h1 {
+    margin: 20px 5px 5px 5px;
+    padding-top: 10px;
+    padding-right: 5px;
+    font-family:'Cormorant Unicase', serif;
+    font-size: 50px;
+}
+.nav{ 
+    display: flex;
+}
+.nav-link {
+    margin-top: 40px;
+    text-decoration: none;
+    font-family: 'Cormorant Unicase', serif;;
+    font-size: 20px;
+    color: white;
+}
+.nav a:hover{
+    color: black;
+    transition: all .3s;
+}
+.headerLog {
+    display: flex;
+}
+.navUser {
+    margin-top: 43px;
+    font-family:initial;
+    font-size: 25px;
+    color: black;
+}
+.imgUser {
+    margin-top: 37px;
+    width: 50px;
+    height: 50px;
+}
+
+/*-------------------------------INDEX-----------------------------*/
+.card {
+    margin: 25px 50px 25px 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "a a"
+    "p img";
+}
+.card img{
+    width: 500px;
+    grid-area: img;
+    align-items: flex-end;
+    margin: 10px 0px 10px 100px;
+}
+.tituloCard {
+    background-color: lightgray;
+    padding-top: 15px;
+    grid-area: a;
+    font-family:'Cormorant Unicase', serif;
+    color: black;
+    text-decoration-line: none;
+}
+.title {
+    margin-left: 15px;
+    text-decoration-line: none;
+    font-size: 30px;
+    font-family:'Cormorant Unicase', serif;
+}
+.tituloCard:hover{
+    color: white;
+    transition: all .3s;
+}
+
+/*-------------------------------BMI-----------------------------*/
+.divH3 {
+    background-color: lightgray;
+    padding-left: 10px;
+}
+.tituloPagina {
+    padding-top: 15px;
+    font-family:'Cormorant Unicase', serif;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 8px 5px 10px gray;
+}
+p {
+    font-family:'Cormorant Unicase', serif;
+    font-size: 20px;
+    text-align: justify;
+    margin: 10px;
+}
+.bmi{
+    display: flex;
+    margin: 45px 10px 35px 10px;
+}
+.respuesta {
+    font-family:monospace;
+    text-align: center;
+    color: red;
+}
+form {
+    display: column;
+    font-family: 'Cormorant Unicase', serif;
+    padding: 90px;
+    padding-bottom: 30px;
+    justify-content: center;  
+}
+.botones {
+    padding: 10px;
+    text-align: center;
+}
+/*-------------------------------PROTEIN COUNTER-----------------------------*/
+.constructor{
+    display: column;
+    text-align: center;
+}
+.constructorImg{
+    margin: 100px 100px 50px 100px;
+}
+.constructorP{
+    margin: 0px 360px 50px 360px;
+}
+/*-------------------------------CONTACT-----------------------------*/
+h3 {
+    font-size: 20px;
+    text-align:left;
+}
+input::placeholder {
+    font-size: 16px;
+    padding: 5px;
+}
+.divContactos {
+    display: flex
+}
+.sectionContactosForm div{
+    margin: 10px 0px 10px 50px;
+    padding: 05px;
+}
+.imgContacto{
+    width: 600px;
+    grid-area: img;
+    margin: 80px 0px 80px 20px;
+}
+/*-------------------------------FOOTER-----------------------------*/
+.footer {
+    background-color: black;
+    padding: 25px;
+    text-align:center
+}
+.cr {
+    font-size: 10px;
+}
+.footerLink a{
+    padding: 15px;
+}
+footer p {
+    color: white;
+    font-family: 'Cormorant Unicase', serif;
+    font-size: 15px;
+    text-align:center
+}   

@@ -33,15 +33,27 @@
         <div class="divH3">
             <h3 class="tituloPagina">PROTEIN COUNTER</h3>
         </div>
-        <div class="constructor">
-            <div class="constructorImg">
-                <img src="../images/construction.png" alt="bmi">
+        <div class="bmi">
+            <div>
+                <p>Calculate how much daily protein you need to consume to be healthy based on your weight and activity. Free Online</p>
+                <form id="inicio">
+                    <label>WEIGHT (Kg):</label> <input id="txtWeight" type="number">
+                    <label for="activity">Activity Level:</label>
+                    <select name="activity" id="activity">
+                        <option value="sedentary">Sedentary</option>
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="vigorous">Vigoruos</option>
+                        <option value="extreme">Extreme</option>
+                      </select>
+                    <section class="botones">
+                        <button id="btnStart">START</button>
+                        <button id="btnReset">RESET</button>
+                    </section>
+                    <p class="respuesta" id="respuesta"> </p>
+                </form>
             </div>
-            <div class="constructorP">
-                <p>You will be able soon to access a calculator to find out how much daily protein you have to consume
-                    to be healthy
-                    based on your weight and activity.</p>
-            </div>
+            <img src="../images/bmi.jpg" alt="bmi">
         </div>
     </main>
     <footer class="footer">
@@ -54,6 +66,7 @@
         <p class="cr"> COPYRIGHT 2023</p>
     </footer>
     <script src="../js/userNav.js"></script>
+    <script src="../js/protein.js"></script>
 </body>
 
 </html>

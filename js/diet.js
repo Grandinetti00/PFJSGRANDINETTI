@@ -19,11 +19,15 @@ function createTags(divOrigen, title, img, content) {
 
     let div = document.createElement("div")
 
-    div.className = "apiDiv"
-    div.innerHTML = `<h3 class="apiH3">Title: ${title}</h3>
-                           <img src="${img}" class="imgDiv">
-                           <p class="pDiv">${content}</p>`
+    div.className = "card"
+    div.innerHTML = `<h3 class="tituloApi">${title}</h3>
+                        <p class="cardText">${content}</p>
+                        <img src="${img}">
+                     </div>`
 
     divOrigen.append(div)
 }
 api();
+
+
+

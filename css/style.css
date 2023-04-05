@@ -178,6 +178,16 @@ form {
     padding: 10px;
     text-align: center;
 }
+/*-------------------------------DIET-----------------------------*/
+.tituloApi {
+    background-color: lightgray;
+    grid-area: a;
+    padding: 5px;
+    font-size: 30px;
+    font-family:'Cormorant Unicase', serif;
+    color: white;
+}
+
 /*-------------------------------PROTEIN COUNTER-----------------------------*/
 .constructor{
     display: column;

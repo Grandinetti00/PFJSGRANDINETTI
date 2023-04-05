@@ -63,15 +63,11 @@
 /*-------------------------------HEADER-----------------------------*/
 header {
     background-color: red;
-    display: flex;
     box-shadow: 0 5px 10px rgba(71, 3, 6, 0.7);
 }
 .headerUp{
     display: flex;
     justify-content: space-between;
-}
-.headerTitulo {
-    display: flex;
 }
 header h1 {
     margin: 20px 5px 5px 5px;
@@ -84,7 +80,6 @@ header h1 {
     display: flex;
 }
 .nav-link {
-    margin-top: 40px;
     text-decoration: none;
     font-family: 'Cormorant Unicase', serif;;
     font-size: 20px;
@@ -94,17 +89,19 @@ header h1 {
     color: black;
     transition: all .3s;
 }
+.headerTitulo {
+    display: flex;
+}
 .headerLog {
     display: flex;
 }
 .navUser {
-    margin-top: 43px;
     font-family:initial;
     font-size: 25px;
     color: black;
+    padding-right: 20px;
 }
 .imgUser {
-    margin-top: 37px;
     width: 50px;
     height: 50px;
 }
@@ -181,6 +178,16 @@ form {
     padding: 10px;
     text-align: center;
 }
+/*-------------------------------DIET-----------------------------*/
+.tituloApi {
+    background-color: lightgray;
+    grid-area: a;
+    padding: 5px;
+    font-size: 30px;
+    font-family:'Cormorant Unicase', serif;
+    color: white;
+}
+
 /*-------------------------------PROTEIN COUNTER-----------------------------*/
 .constructor{
     display: column;

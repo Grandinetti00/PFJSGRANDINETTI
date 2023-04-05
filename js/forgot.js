@@ -6,9 +6,16 @@ button.addEventListener('click', (e) => {
     console.log(email);
     
     if (email === "") {
-        alert("Please enter your registration email");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Please enter your registration email',
+          });
     } else {
-        alert("Check your email box!");
-        window.location.replace("../pages/log.html");
+        Swal.fire({
+            icon: 'success',
+            title: 'Check your email box!',
+            html:'Go to ' + '<a href="../pages/log.html">Log In</a>',
+          });
     }
 });

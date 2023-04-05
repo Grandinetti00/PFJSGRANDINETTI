@@ -27,13 +27,16 @@ button.addEventListener('click', (e) => {
     console.log(newpassword);
     
     if (name === "" || lastname === "" || username === "" || email === "" || password === "" || newpassword === ""){
-        alert("Some data is missing. Please try again.");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Some data is missing. Please try again.',
+          });
     } else {
         const newUsuario = new Usuario (username, lastname, username, email, password, newpassword);
         let newUsuarioJSON = JSON.stringify(newUsuario);
         sessionStorage.setItem(username, newUsuarioJSON);
         sessionStorage.setItem("logUser", username);
-        alert("Welcome to Quick Training!");
         window.location.replace("../index.html");
     }
 });

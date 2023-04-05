@@ -20,11 +20,7 @@ inicio.addEventListener("submit", (e) => {
         let txtHeight = document.getElementById("txtHeight");
         let altura = txtHeight.value;
         let imc = peso / ((altura / 100) * (altura / 100));
-        if (peso == "" || altura == "") {
-            respuesta.innerHTML = "Some data is missing. Please try again.";
-        } else {
-            resultadoImc(imc);
-        }
+        (peso == "" || altura == "") ? respuesta.innerHTML = "Some data is missing. Please try again." : resultadoImc(imc);
     };
 
     function resultadoImc(indice) {

@@ -1,7 +1,8 @@
-let userNavJSON = sessionStorage.getItem("logUser");
-let userNav = userNavJSON;
+let userNav= sessionStorage.getItem("logUser");
+if (userNav === null) {
+    userNav = "User"
+};
 
-console.log(userNavJSON);
 console.log(userNav);
 
 let userTag = document.getElementById("userNav");

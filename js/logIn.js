@@ -8,15 +8,22 @@ button.addEventListener('click', (e) => {
     console.log(contrasena);
     
     if (username === "" || contrasena === "") {
-        alert("Some data is missing. Please try again.");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Some data is missing. Please try again.',
+          });
     } else {
         let logUser = JSON.parse(sessionStorage.getItem(username));
         
         console.log(logUser);
 
         if (logUser === null) {
-            alert("Please, Log Up!");
-            window.location.replace("../pages/newUser.html");
+            Swal.fire({
+                icon: 'warning',
+                title: 'No user?',
+                html:'Log up ' + '<a href="../pages/newUser.html">here</a>',
+              });
         } else {
             sessionStorage.setItem('logUser', username);
             window.location.replace("../index.html");
